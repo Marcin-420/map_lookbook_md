@@ -1,13 +1,16 @@
-# def janek(name: str):
-#     print(f'Cześć {name}, jesten Janek')
-#
-#     janek('Julia')
+users: list = [
+    {'name': 'Julia', 'location': 'Ząbki', 'posts': 10},
+]
+
+print(users)
 
 
-while True:
-    day=input('Jaki dziś dzień?')
-    if day == 'środa':
-        print('tak, dzisiaj jest środa.')
-        break
-    print('niestety nie, spróbuj jeszcze raz')
+def add_user(users_data: list) -> None:
+    new_name: str = input('podaj imie nowego znajomego: ')
+    new_location: str = input('podaj nazwę lokalizacji: ')
+    new_posts: int = int(input('podaj liczbe postów: '))
+    users.append({'name': new_name, 'location': new_location, 'posts': new_posts})
 
+
+add_user(users)
+print(users)
