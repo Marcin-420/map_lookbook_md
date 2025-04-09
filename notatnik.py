@@ -4,10 +4,8 @@ users: list = [
     {'name': 'Szymon', 'location': 'Osrtołeka', 'posts': 10},
 ]
 
-print(users)
 
 
 
-
-remove_user(users)
+update_user(users)
 print(users)
