@@ -3,15 +3,25 @@ from utils.controller import get_user_info
 
 def main():
     print(f'Witaj {users[0]['name']}')
-    get_user_info(users[1:])
+
+    while True:
+        print('==================MENU====================')
+        print('0 - Zakończ program')
+        print('1 - Wyświetl znajomych')
+        print('2 - Dodaj znajomego')
+        print('======================================')
+
+        choice= input('wybierz opcje Menu')
+        if choice == '0': break
+        if choice == '1': get_user_info(users[1:])
 
 
 
 
++
 
 
 
 
-
-if__name__== '__main__':
+if __name__== '__main__':
     main()
